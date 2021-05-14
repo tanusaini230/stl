@@ -3,7 +3,7 @@ using namespace std;
 
 class node
 {
-
+    public:
     int info;
     node *next;
 };
@@ -11,7 +11,7 @@ class node
 void beg(node **head, int data)
 {
 
-    node *newnode = new node();
+    node * newnode = new node();
     newnode->info = data;
     newnode->next = NULL;
 
@@ -28,8 +28,8 @@ void beg(node **head, int data)
 void print(node *head)
 {
 
-    node *temp = *head;
-    while (temp !NULL)
+    node *temp = head;
+    while (temp !=NULL)
     {
     }
     {
